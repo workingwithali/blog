@@ -1,35 +1,42 @@
-import Link from "next/link"
-import { Button } from "./ui/button"
+import Link from "next/link";
+import { Button } from "./ui/button";
 // components
-import Nav from "./Nav"
-import MobileNav from "./MobileNav"
+import Nav from "./Nav";
+import MobileNav from "./MobileNav";
+
 const Header = () => {
     return (
-        <header className="py-8 px-2 xl:py-12 bg-background/50 sticky top-0 backdrop-blur ">
-            <div className="container mx-auto flex justify-between border-b items-center">
-                {/* logo */}
-                <Link href='/'>
-                    <h1 className="text-2xl xl:text-4xl font-semibold">
+        <header className="py-6 px-4 xl:py-8 bg-[hsl(var(--background))]/50 text-[hsl(var(--foreground))] sticky top-0 backdrop-blur z-50">
+            <div className="container mx-auto flex justify-between items-center border-b border-[hsl(var(--border))]">
+                {/* Logo */}
+                <Link href="/">
+                    <h1 className="text-2xl xl:text-4xl font-semibold text-[hsl(var(--primary))]">
                         WorkingWithAli
                     </h1>
                 </Link>
-                {/* desktop nav */}
+
+                {/* Desktop navigation */}
                 <div className="hidden xl:flex items-center gap-8">
                     <Nav />
                     <Link href="/contact">
-                        <Button>Login</Button>
+                        <Button className="text-sm xl:text-base bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))]">
+                            Login
+                        </Button>
                     </Link>
                     <Link href="/contact">
-                        <Button>Sinup</Button>
+                        <Button className="text-sm xl:text-base bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))]">
+                            Sign up
+                        </Button>
                     </Link>
                 </div>
-                {/* mobile nav */}
-                <div className="xl:hidden">
+
+                {/* Mobile navigation */}
+                <div className="flex xl:hidden">
                     <MobileNav />
                 </div>
             </div>
         </header>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;
