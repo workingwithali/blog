@@ -57,7 +57,7 @@ const MobileNav = () => {
                         <Link
                             href={link.path}
                             key={index}
-                            className={`${link.path === pathname && "text-accent border-b-2 border-accent"} text-xl capitalize hover:text-accent font-medium transition-all`}
+                            className={`${link.path === pathname && "text-accent border-b-2 "} text-xl capitalize hover:text-accent font-medium transition-all`}
                             onClick={() => setIsOpen(false)}  // Close sheet after selecting a link
                         >
                             {link.name}
