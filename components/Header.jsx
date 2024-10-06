@@ -3,6 +3,7 @@ import { Button } from "./ui/button";
 // components
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
+import { ModeToggle } from "./ThemeBtn";
 
 const Header = () => {
     return (
@@ -28,13 +29,17 @@ const Header = () => {
                             Signup
                         </Button>
                     </Link>
+                    <ModeToggle />
                 </div>
-
                 {/* Mobile navigation */}
                 <div className="flex xl:hidden">
+                    <div className="mx-2">
+                    <ModeToggle />
+                    </div>
                     <MobileNav />
                 </div>
             </div>
+
         </header>
     );
 };
