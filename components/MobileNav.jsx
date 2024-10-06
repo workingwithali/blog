@@ -29,7 +29,7 @@ const MobileNav = () => {
     const pathname = usePathname();
     const [isOpen, setIsOpen] = useState(false);
 
-    
+
 
     return (
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -41,7 +41,7 @@ const MobileNav = () => {
                     {/* logo */}
                     <Link href="/">
                         <h1 className="text-2xl font-semibold">
-                            WorkingWithAli 
+                            WorkingWithAli
                         </h1>
                     </Link>
                 </div>
@@ -57,16 +57,18 @@ const MobileNav = () => {
                             {link.name}
                         </Link>
                     ))}
-                    <Link href="/contact">
-                        <Button >
-                            Login
-                        </Button>
-                    </Link>
-                    <Link href="/contact">
-                        <Button >
-                            Sign up
-                        </Button>
-                    </Link>
+                    <div className="flex gap-2">
+                        <Link href="/contact">
+                            <Button className="text-xs">
+                                Login
+                            </Button>
+                        </Link>
+                        <Link href="/contact">
+                            <Button className="text-xs">
+                                Sign up
+                            </Button>
+                        </Link>
+                    </div>
                 </nav>
             </SheetContent>
         </Sheet>
