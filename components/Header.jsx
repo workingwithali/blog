@@ -6,8 +6,8 @@ import MobileNav from "./MobileNav";
 
 const Header = () => {
     return (
-        <header className="p-4 bg-background/50 sticky top-0 backdrop-blur">
-            <div className="contaniner mx-auto border-b flex justify-between items-center p-4  ">
+        <header className="bg-background/50 sticky top-0 backdrop-blur border-b">
+            <div className="contaniner mx-auto flex justify-between items-center p-4">
                 {/* Logo */}
                 <Link href="/">
                     <h1 className="text-lg font-bold">

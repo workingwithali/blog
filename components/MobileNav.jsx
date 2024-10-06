@@ -12,16 +12,12 @@ const links = [
         path: "/"
     },
     {
-        name: "services",
-        path: "/services"
+        name: "about",
+        path: "/about"
     },
     {
-        name: "resume",
-        path: "/resume"
-    },
-    {
-        name: "work",
-        path: "/work"
+        name: "blog",
+        path: "/blog"
     },
     {
         name: "contact",
@@ -38,7 +34,7 @@ const MobileNav = () => {
     return (
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger className="flex justify-center items-center" onClick={() => setIsOpen(!isOpen)}>
-                <CiMenuFries className="text-[32px] text-[hsl(var(--accent))]" />
+                <CiMenuFries className="text-[32px] " />
             </SheetTrigger>
             <SheetContent className="flex flex-col p-4 md:p-8 bg-[hsl(var(--background))] text-[hsl(var(--foreground))]">
                 <div className="mt-10 mb-8 text-center text-2xl">
@@ -49,7 +45,7 @@ const MobileNav = () => {
                         </h1>
                     </Link>
                 </div>
-                <nav className="flex flex-col justify-center items-center gap-3">
+                <nav className="flex flex-col justify-center items-center gap-4">
                     {links.map((link, index) => (
                         <Link
                             href={link.path}
