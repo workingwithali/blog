@@ -29,12 +29,12 @@ const Nav = () => {
     const pathname = usePathname();
 
     return (
-        <nav className="flex flex-wrap gap-4 md:gap-8 text-[hsl(var(--foreground))]">
+        <nav className="flex flex-wrap gap-4 md:gap-8">
             {links.map((link, index) => (
                 <Link
                     href={link.path}
                     key={index}
-                    className={`${link.path === pathname ? "text-[hsl(var(--accent))] border-b-2 border-[hsl(var(--accent))]" : "hover:text-[hsl(var(--accent))]"} capitalize font-medium transition-all`}
+                    className={`${link.path === pathname ? "text- border-b-2 border-" : "hover:text-"} capitalize font-medium transition-all`}
                 >
                     {link.name}
                 </Link>

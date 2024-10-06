@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -33,10 +33,7 @@ const MobileNav = () => {
     const pathname = usePathname();
     const [isOpen, setIsOpen] = useState(false);
 
-    useEffect(() => {
-        // Close the sheet when the pathname changes
-        setIsOpen(false);
-    }, [pathname]);
+    
 
     return (
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -47,12 +44,12 @@ const MobileNav = () => {
                 <div className="mt-10 mb-8 text-center text-2xl">
                     {/* logo */}
                     <Link href="/">
-                        <h1 className="text-2xl font-semibold text-[hsl(var(--primary))]">
-                            WorkingWithAli <span className="text-[hsl(var(--accent))]">.</span>
+                        <h1 className="text-2xl font-semibold">
+                            WorkingWithAli 
                         </h1>
                     </Link>
                 </div>
-                <nav className="flex flex-col justify-center items-center gap-6">
+                <nav className="flex flex-col justify-center items-center gap-3">
                     {links.map((link, index) => (
                         <Link
                             href={link.path}
@@ -65,12 +62,12 @@ const MobileNav = () => {
                         </Link>
                     ))}
                     <Link href="/contact">
-                        <Button className="text-sm xl:text-base bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))]">
+                        <Button >
                             Login
                         </Button>
                     </Link>
                     <Link href="/contact">
-                        <Button className="text-sm xl:text-base bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))]">
+                        <Button >
                             Sign up
                         </Button>
                     </Link>

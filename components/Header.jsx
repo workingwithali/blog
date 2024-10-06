@@ -6,26 +6,26 @@ import MobileNav from "./MobileNav";
 
 const Header = () => {
     return (
-        <header className="py-6 px-4 xl:py-8 bg-[hsl(var(--background))]/50 text-[hsl(var(--foreground))] sticky top-0 backdrop-blur z-50">
-            <div className="container mx-auto flex justify-between items-center border-b border-[hsl(var(--border))]">
+        <header className="p-4 bg-background/50 sticky top-0 backdrop-blur">
+            <div className="contaniner mx-auto border-b flex justify-between items-center p-4  ">
                 {/* Logo */}
                 <Link href="/">
-                    <h1 className="text-2xl xl:text-4xl font-semibold text-[hsl(var(--primary))]">
+                    <h1 className="text-lg font-bold">
                         WorkingWithAli
                     </h1>
                 </Link>
 
                 {/* Desktop navigation */}
-                <div className="hidden xl:flex items-center gap-8">
+                <div className="hidden xl:flex items-center gap-2">
                     <Nav />
                     <Link href="/contact">
-                        <Button className="text-sm xl:text-base bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))]">
+                        <Button variant="outline">
                             Login
                         </Button>
                     </Link>
                     <Link href="/contact">
-                        <Button className="text-sm xl:text-base bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))]">
-                            Sign up
+                        <Button variant="outline">
+                            Signup
                         </Button>
                     </Link>
                 </div>
