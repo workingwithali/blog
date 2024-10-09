@@ -45,7 +45,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col lg:flex-row justify-center items-center space-y-8 lg:space-y-0 lg:space-x-8">
           {/* Basic Plan */}
-          <div className="flex flex-col items-center w-full max-w-sm p-8 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg">
+          <div className="text-center w-full max-w-sm p-8 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Basic</h3>
             <p className="mt-4 text-gray-500 dark:text-gray-300">$10/month</p>
             <ul className="mt-6 space-y-4">
@@ -61,9 +61,10 @@ export default function Home() {
           </div>
 
           {/* Standard Plan - Bestseller */}
-          <div className="flex flex-col items-center w-full max-w-sm p-8 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg border-4 border-primary">
+          <div className="text-center w-full max-w-sm p-8 xl:p-10 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg border-2 border-primary">
             <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Standard</h3>
             <p className="mt-4 text-gray-500 dark:text-gray-300">$20/month</p>
+              <span className=" inline-block px-3 py-1 text-sm font-bold text-white rounded-full bg-primary">BestSeller</span>
             <ul className="mt-6 space-y-4">
               <li className="text-gray-600 dark:text-gray-400">Feature 1</li>
               <li className="text-gray-600 dark:text-gray-400">Feature 2</li>
@@ -77,7 +78,7 @@ export default function Home() {
           </div>
 
           {/* Premium Plan */}
-          <div className="flex flex-col items-center w-full max-w-sm p-8 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg">
+          <div className="text-center w-full max-w-sm p-8 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Premium</h3>
             <p className="mt-4 text-gray-500 dark:text-gray-300">$30/month</p>
             <ul className="mt-6 space-y-4">
