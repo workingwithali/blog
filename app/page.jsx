@@ -37,6 +37,58 @@ export default function Home() {
           <img src="https://www.creative-tim.com/twcomponents/svg/website-designer-bro-purple.svg" alt="tailwind css components" className="w-full h-full max-w-md mx-auto" />
         </div>
       </section>
+      <section className="container mx-auto px-4 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200">Pricing Plans</h2>
+          <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">Choose a plan that suits your needs.</p>
+        </div>
+        <div className="flex flex-col lg:flex-row justify-center items-center space-y-8 lg:space-y-0 lg:space-x-8">
+          {/* Basic Plan */}
+          <div className="w-full max-w-sm p-8 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg">
+            <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Basic</h3>
+            <p className="mt-4 text-gray-500 dark:text-gray-300">$10/month</p>
+            <ul className="mt-6 space-y-4">
+              <li className="text-gray-600 dark:text-gray-400">Feature 1</li>
+              <li className="text-gray-600 dark:text-gray-400">Feature 2</li>
+              <li className="text-gray-600 dark:text-gray-400">Feature 3</li>
+            </ul>
+            <button className="mt-8 w-full px-4 py-2 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none focus:bg-primary/70">
+              Choose Plan
+            </button>
+          </div>
+
+          {/* Standard Plan */}
+          <div className="w-full max-w-sm p-8 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg">
+            <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Standard</h3>
+            <p className="mt-4 text-gray-500 dark:text-gray-300">$20/month</p>
+            <ul className="mt-6 space-y-4">
+              <li className="text-gray-600 dark:text-gray-400">Feature 1</li>
+              <li className="text-gray-600 dark:text-gray-400">Feature 2</li>
+              <li className="text-gray-600 dark:text-gray-400">Feature 3</li>
+              <li className="text-gray-600 dark:text-gray-400">Feature 4</li>
+            </ul>
+            <button className="mt-8 w-full px-4 py-2 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none focus:bg-primary/70">
+              Choose Plan
+            </button>
+          </div>
+
+          {/* Premium Plan */}
+          <div className="w-full max-w-sm p-8 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg">
+            <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Premium</h3>
+            <p className="mt-4 text-gray-500 dark:text-gray-300">$30/month</p>
+            <ul className="mt-6 space-y-4">
+              <li className="text-gray-600 dark:text-gray-400">Feature 1</li>
+              <li className="text-gray-600 dark:text-gray-400">Feature 2</li>
+              <li className="text-gray-600 dark:text-gray-400">Feature 3</li>
+              <li className="text-gray-600 dark:text-gray-400">Feature 4</li>
+              <li className="text-gray-600 dark:text-gray-400">Feature 5</li>
+            </ul>
+            <button className="mt-8 w-full px-4 py-2 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none focus:bg-primary/70">
+              Choose Plan
+            </button>
+          </div>
+        </div>
+      </section>
 
 
     </div>
