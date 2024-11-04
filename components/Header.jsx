@@ -7,7 +7,7 @@ import { ModeToggle } from "./ThemeBtn";
 
 const Header = () => {
     return (
-        <header className="bg-background/50 sticky top-0 backdrop-blur border-b">
+        <header className="bg-background/50 sticky top-0 backdrop-blur border-b z-10">
             <div className="contaniner mx-auto flex justify-between items-center p-4">
                 {/* Logo */}
                 <Link href="/">
