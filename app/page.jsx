@@ -3,6 +3,7 @@ import { Button } from "../components/ui/button";
 import FeaturedPosts from '../components/FeaturedPosts';
 import Categories from '../components/Categories';
 import About from '../components/About';
+import PopularPosts from '../components/PopularPosts';
 
 export default function Home() {
   return (
@@ -114,7 +115,7 @@ export default function Home() {
         <About />
       </section>
       <section className="container mx-auto p-4">
-        <About />
+        <PopularPosts />
       </section>
 
 
