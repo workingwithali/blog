@@ -4,6 +4,7 @@ import FeaturedPosts from '../components/FeaturedPosts';
 import Categories from '../components/Categories';
 import About from '../components/About';
 import PopularPosts from '../components/PopularPosts';
+import NewsletterSignup from '../components/NewsletterSignup';
 
 export default function Home() {
   return (
@@ -116,6 +117,9 @@ export default function Home() {
       </section>
       <section className="container mx-auto p-4">
         <PopularPosts />
+      </section>
+      <section className="container mx-auto p-4">
+        <NewsletterSignup />
       </section>
 
 
