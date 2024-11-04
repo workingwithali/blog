@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "../components/ui/button";
+import FeaturedPosts from '../components/FeaturedPosts';
 
 export default function Home() {
   return (
@@ -101,6 +102,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <div className="container mx-auto p-4" >
+        <FeaturedPosts />
+      </div>
 
 
     </main>
