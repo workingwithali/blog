@@ -6,7 +6,7 @@ export default function Home() {
 
     <main>
 
-      <section className="container px-4 py-10 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center">
+      <section className="container lg:h-screen px-4 py-10 mx-auto  lg:space-x-8 lg:flex lg:items-center">
         <div className="w-full text-center lg:text-left lg:w-1/2 lg:-mt-8">
           <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
             A <span className="font-semibold">free repository</span> for community <br className="hidden lg:block" /> components using <span className="font-semibold underline decoration-primary">Tailwind CSS</span>
@@ -45,9 +45,7 @@ export default function Home() {
           />
         </div>
       </section>
-
-
-      <section className="container px-4 py-16 bg-gray-100 dark:bg-gray-900">
+      <section className="px-4 lg:px-0 py-16 bg-gray-100 dark:bg-gray-900">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200">Pricing Plans</h2>
           <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">Choose a plan that suits your needs.</p>
@@ -103,6 +101,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+
     </main>
   );
 }
