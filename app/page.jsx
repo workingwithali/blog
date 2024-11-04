@@ -113,6 +113,9 @@ export default function Home() {
       <section className="container mx-auto p-4">
         <About />
       </section>
+      <section className="container mx-auto p-4">
+        <About />
+      </section>
 
 
     </main>
