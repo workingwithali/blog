@@ -1,10 +1,10 @@
-// import Image from "next/image";
+import Image from "next/image";
 import { Button } from "../components/ui/button";
 
 export default function Home() {
   return (
 
-    <div>
+    <main>
 
       <section className="container px-4 py-10 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center">
         <div className="w-full text-center lg:text-left lg:w-1/2 lg:-mt-8">
@@ -35,10 +35,19 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full mt-4 lg:mt-0 lg:w-1/2">
-          <img src="https://www.creative-tim.com/twcomponents/svg/website-designer-bro-purple.svg" alt="tailwind css components" className="w-full h-full max-w-md mx-auto" />
+          <Image
+            src="https://www.creative-tim.com/twcomponents/svg/website-designer-bro-purple.svg"
+            alt="tailwind css components"
+            className="w-full h-full max-w-md mx-auto"
+            layout="responsive"
+            width={500}
+            height={500}
+          />
         </div>
       </section>
-      <section className="container mx-auto px-4 py-16">
+
+
+      <section className="container px-4 py-16 bg-gray-100 dark:bg-gray-900">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200">Pricing Plans</h2>
           <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">Choose a plan that suits your needs.</p>
@@ -64,7 +73,7 @@ export default function Home() {
           <div className="text-center w-full max-w-sm p-8 xl:p-10 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg border-2 border-primary">
             <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Standard</h3>
             <p className="mt-4 text-gray-500 dark:text-gray-300">$20/month</p>
-              <span className=" inline-block px-3 py-1 text-sm font-bold text-white rounded-full bg-primary">BestSeller</span>
+            <span className=" inline-block px-3 py-1 text-sm font-bold text-white rounded-full bg-primary">BestSeller</span>
             <ul className="mt-6 space-y-4">
               <li className="text-gray-600 dark:text-gray-400">Feature 1</li>
               <li className="text-gray-600 dark:text-gray-400">Feature 2</li>
@@ -94,8 +103,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
-    </div>
+    </main>
   );
 }
