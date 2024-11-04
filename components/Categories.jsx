@@ -9,6 +9,7 @@ const categories = [
     { id: 3, name: 'React', description: 'React best practices and tutorials.' },
     { id: 4, name: 'Web Performance', description: 'Optimize and speed up your web apps.' },
     { id: 5, name: 'Backend Development', description: 'Dive into backend technologies and servers.' },
+    { id: 6, name: 'Backend Development', description: 'Dive into backend technologies and servers.' },
 ];
 
 const Categories = () => {
