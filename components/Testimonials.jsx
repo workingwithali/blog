@@ -11,21 +11,21 @@ const testimonials = [
         name: 'John Doe',
         title: 'CEO at Tech Innovations',
         content: 'This blog provides amazing insights into the tech industry. I always find valuable information in every post!',
-        imageUrl: '/images/john-doe.jpg',
+        imageUrl: '',
     },
     {
         id: 2,
         name: 'Jane Smith',
         title: 'Software Engineer at DevWorks',
         content: 'The tutorials here have helped me grow my skills immensely. Highly recommended for any aspiring developer!',
-        imageUrl: '/images/jane-smith.jpg',
+        imageUrl: '',
     },
     {
         id: 3,
         name: 'Carlos Rios',
         title: 'Product Manager at Innovate Inc.',
         content: 'Engaging, informative, and always up-to-date. This blog has become one of my go-to resources.',
-        imageUrl: '/images/carlos-rios.jpg',
+        imageUrl: '',
     },
 ];
 

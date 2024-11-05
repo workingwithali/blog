@@ -7,6 +7,8 @@ import PopularPosts from '../components/PopularPosts';
 import NewsletterSignup from '../components/NewsletterSignup';
 import LatestPosts from '../components/LatestPosts';
 import SocialMediaLinks from '../components/SocialMediaLinks';
+import Testimonials from '../components/Testimonials';
+
 
 
 export default function Home() {
@@ -129,6 +131,9 @@ export default function Home() {
       </section>
       <section className="container mx-auto p-4">
         <SocialMediaLinks />
+      </section>
+      <section className="container mx-auto p-4">
+        <Testimonials />
       </section>
 
 
