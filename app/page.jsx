@@ -5,6 +5,7 @@ import Categories from '../components/Categories';
 import About from '../components/About';
 import PopularPosts from '../components/PopularPosts';
 import NewsletterSignup from '../components/NewsletterSignup';
+import LatestPosts from '../components/LatestPosts';
 
 export default function Home() {
   return (
