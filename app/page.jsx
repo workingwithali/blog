@@ -8,6 +8,8 @@ import NewsletterSignup from '../components/NewsletterSignup';
 import LatestPosts from '../components/LatestPosts';
 import SocialMediaLinks from '../components/SocialMediaLinks';
 import Testimonials from '../components/Testimonials';
+import Footer from '../components/Footer';
+
 
 
 
@@ -135,8 +137,9 @@ export default function Home() {
       <section className="container mx-auto p-4">
         <Testimonials />
       </section>
-
-
+      <section className="container mx-auto p-4">
+        <Footer />
+      </section>
     </main>
   );
 }
