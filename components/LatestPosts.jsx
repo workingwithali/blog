@@ -1,27 +1,27 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
-import Image from "next/image";
 
 const latestPosts = [
     {
         id: 1,
         title: 'Exploring the Power of Next.js for SEO',
         excerpt: 'Learn how Next.js can boost your website’s SEO with server-side rendering.',
-        imageUrl: '/images/seo.jpg'
+        imageUrl: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
     },
     {
         id: 2,
         title: 'The Ultimate Guide to Tailwind CSS',
         excerpt: 'An in-depth guide to using Tailwind CSS to create responsive designs effortlessly.',
-        imageUrl: '/images/tailwind.jpg'
+        imageUrl: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
     },
     {
         id: 3,
         title: 'JavaScript Async/Await Simplified',
         excerpt: 'Master asynchronous JavaScript programming with async/await.',
-        imageUrl: '/images/async.jpg'
+        imageUrl: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
     },
 ];
 
@@ -39,11 +39,15 @@ const LatestPosts = () => {
                         whileHover={{ scale: 1.05 }}
                         className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden"
                     >
-                        <Image
-                            src={post.imageUrl}
-                            alt={post.title}
-                            className="w-full h-48 object-cover"
-                        />
+                        <div className="relative w-full h-48">
+                            <Image
+                                src={post.imageUrl}
+                                alt={post.title}
+                                layout="fill"
+                                objectFit="cover"
+                                className="rounded-t-lg"
+                            />
+                        </div>
                         <div className="p-6">
                             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{post.title}</h3>
                             <p className="text-gray-700 dark:text-gray-300">{post.excerpt}</p>

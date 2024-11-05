@@ -122,6 +122,9 @@ export default function Home() {
       <section className="container mx-auto p-4">
         <NewsletterSignup />
       </section>
+      <section className="container mx-auto p-4">
+        <LatestPosts />
+      </section>
 
 
     </main>
