@@ -28,19 +28,22 @@ const PopularPosts = () => {
                         className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 cursor-pointer"
                     >
                         <Link href={post.link}>
-                            <div className="relative mb-4">
+                            <div className="relative">
                                 <Image
                                     src={post.image}
                                     alt={post.title}
-                                    className="w-full h-48 object-cover rounded-md"
-                                    width={600}
-                                    height={400}
+                                    width={600} // You can adjust the width
+                                    height={400} // You can adjust the height
+                                    className="w-full h-48 object-cover"
                                 />
                             </div>
                             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{post.title}</h3>
                         </Link>
                         <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">{post.views} views</p>
-                        <p className="text-gray-700 dark:text-gray-300">{post.excerpt}</p>
+                        <p className="text-gray-700 dark:text-gray-300 mb-4">{post.excerpt}</p>
+                        <Link href={post.link} className="text-blue-500 hover:underline">
+                            Read More
+                        </Link>
                     </motion.div>
                 ))}
             </div>
