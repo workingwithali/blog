@@ -137,9 +137,9 @@ export default function Home() {
       <section className="container mx-auto p-4">
         <Testimonials />
       </section>
-      {/* <section className="container mx-auto p-4">
+      <section className="container mx-auto p-4">
         <Footer />
-      </section> */}
+      </section>
     </main>
   );
 }
